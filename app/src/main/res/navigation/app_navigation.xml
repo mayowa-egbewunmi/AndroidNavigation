@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/app_navigation"
+            app:startDestination="@+id/first_fragment">
+
+    <fragment
+            android:id="@+id/first_fragment"
+            android:name="com.mayowa.android.navigation.FirstFragment"
+            android:label="@string/first_fragment"
+            tools:layout="@layout/first_fragment">
+
+        <action
+                android:id="@+id/navigate_up"
+                app:destination="@+id/third_fragment"/>
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/second_fragment"
+            android:name="com.mayowa.android.navigation.SecondFragment"
+            android:label="@string/second_fragment"
+            tools:layout="@layout/second_fragment"/>
+
+    <fragment
+            android:id="@+id/third_fragment"
+            android:name="com.mayowa.android.navigation.ThirdFragment"
+            android:label="@string/third_fragment"
+            tools:layout="@layout/third_fragment"/>
+</navigation>
